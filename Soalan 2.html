@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Details</title>
+</head>
+<body>
+<script>
+    // JSON data representing the collection of books
+    var booksJSON = {
+        "books": [
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "publicationYear": 1925,
+            "genres": ["Fiction", "Classics"]
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "publicationYear": 1960,
+            "genres": ["Fiction", "Coming-of-Age"]
+        }
+        ]
+    };
+
+    // Displaying the details
+    document.write("The title of the first book: " + booksJSON.books[0].title);
+    document.write("<br>");
+    document.write("The author of the second book: " + booksJSON.books[1].author);
+    document.write("<br>");
+    document.write("The genres of all books: " + booksJSON.books.map(book => book.genres).flat().join(", "));
+
+    // Loop through the students and display the subjects
+    stuData.Students.forEach(student => {
+            document.write(student.subjects);
+        });
+</script>
+</body>
+</html>
